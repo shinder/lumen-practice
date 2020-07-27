@@ -72,9 +72,10 @@ $app->configure('app');
 |
 */
 
-// $app->middleware([
-//     App\Http\Middleware\ExampleMiddleware::class
-// ]);
+ $app->middleware([
+     App\Http\Middleware\GlobalAfterMiddleware::class,
+     App\Http\Middleware\GlobalBeforeMiddleware::class,
+ ]);
 
 // $app->routeMiddleware([
 //     'auth' => App\Http\Middleware\Authenticate::class,
@@ -114,6 +115,7 @@ $app->router->group([
     require __DIR__.'/../routes/using-controllers.php';
     require __DIR__.'/../routes/using-requests.php';
     require __DIR__.'/../routes/using-responses.php';
+    require __DIR__.'/../routes/using-middlewares.php';
 
     require __DIR__.'/../routes/raw-sql-query.php';
     require __DIR__.'/../routes/query-builder.php';
