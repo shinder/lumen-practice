@@ -13,4 +13,5 @@ $router->get('/try-controller04', [
     'uses' => 'TestController@getRequest04'
 ]);
 
+# 在控制器中使用依賴注入
 $router->get('/try-controller05', 'TestController@getRequest05');

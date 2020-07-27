@@ -35,7 +35,4 @@ class TestController extends Controller
         return $my->name;
     }
 
-
-
-
 }

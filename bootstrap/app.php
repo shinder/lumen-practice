@@ -112,6 +112,8 @@ $app->router->group([
     require __DIR__.'/../routes/web.php';
     require __DIR__.'/../routes/route-rules.php';
     require __DIR__.'/../routes/using-controllers.php';
+    require __DIR__.'/../routes/using-requests.php';
+
     require __DIR__.'/../routes/raw-sql-query.php';
     require __DIR__.'/../routes/query-builder.php';
 });
