@@ -78,4 +78,14 @@ class RequestController extends Controller
         return $output;
     }
 
+    public function headers01(Request $request) {
+        # 設定檔頭
+        $request->headers->set('X-Shin', 'der');
+        # 取得所有 headers
+        return $request->headers->all();
+    }
+
+    public function headers02(Request $request) {
+        return $request->headers->get('user-agent');
+    }
 }

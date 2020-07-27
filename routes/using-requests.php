@@ -34,6 +34,8 @@ $router->post('/upload01', 'RequestController@upload01');
 $router->post('/upload02', 'RequestController@upload02');
 
 
-
+# 取得 headers
+$router->get('/headers01', 'RequestController@headers01');
+$router->get('/headers02', 'RequestController@headers02');
 
 
