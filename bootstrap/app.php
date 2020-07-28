@@ -77,9 +77,10 @@ $app->configure('app');
      App\Http\Middleware\GlobalBeforeMiddleware::class,
  ]);
 
-// $app->routeMiddleware([
-//     'auth' => App\Http\Middleware\Authenticate::class,
-// ]);
+ $app->routeMiddleware([
+     'my_try' => App\Http\Middleware\MyTryMiddleware::class
+     // 'auth' => App\Http\Middleware\Authenticate::class,
+ ]);
 
 /*
 |--------------------------------------------------------------------------

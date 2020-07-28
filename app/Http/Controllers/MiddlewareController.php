@@ -19,4 +19,9 @@ class MiddlewareController extends Controller
         return $request->headers->all();
     }
 
+
+    public function middle02(Request $request) {
+
+        return 'middle02';
+    }
 }
